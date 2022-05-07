@@ -65,10 +65,10 @@ const applyFilters = () => {
    updatedList = updatedList.filter(
    (item) => {
   if(item.media_type==='movie') {
-     return  ((parseInt((item.release_date.substring(0, 4)) >= from) && (parseInt(item.release_date.substring(0, 4)) <= to)))
- }
+    return ((parseInt(item.release_date.substring(0, 4)) >= from) && (parseInt(item.release_date.substring(0, 4)) <= to))
+  }
   else {
-    return ((parseInt((item.first_air_date.substring(0, 4)) >= from) && (parseInt(item.first_air_date.substring(0, 4)) <= to)))
+    return ((parseInt(item.first_air_date.substring(0, 4)) >= from) && (parseInt(item.first_air_date.substring(0, 4)) <= to))
   }
 }) 
   }
